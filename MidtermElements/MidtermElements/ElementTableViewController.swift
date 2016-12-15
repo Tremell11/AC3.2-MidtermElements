@@ -81,9 +81,9 @@ class ElementTableViewController: UITableViewController {
             // I keep getting nil and I know that this has something to do with what information is being parsed. I feel that I set it
             
             DetailView.elementImage.downloadImage(from: "https://s3.amazonaws.com/ac3.2-elements/\(elements[indexPath.row].symbol).png", with: cache)
-            DetailView.boilingPointLabel.text = "\(elements[indexPath.row].boilingPoint)"
-            DetailView.meltingPointLabel.text = "\(elements[indexPath.row].meltingPoint)"
-            DetailView.nameNumberWeightLabel.text = "\(elements[indexPath.row].name) (\(elements[indexPath.row].number)) \((elements[indexPath.row].weight))"
+            DetailView.boilingPointLabel.text = "Boiling Point: \(elements[indexPath.row].boilingPoint)"
+            DetailView.meltingPointLabel.text = "Melting Point: \(elements[indexPath.row].meltingPoint)"
+            DetailView.nameNumberWeightLabel.text = "Name: \(elements[indexPath.row].name) (Number: \(elements[indexPath.row].number)) Weight: \((elements[indexPath.row].weight))"
             DetailView.symbolLabel.text = elements[indexPath.row].symbol
             }
             
